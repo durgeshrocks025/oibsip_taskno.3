@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #FFDAB9, #00a0fc);
+}
+
+h1 {
+    text-align: center;
+    font-size: x-large;
+    padding-top: auto;
+}
+
+.container {
+    text-align: center;
+}
+
+#inp{
+   width: 280px; 
+   height: 48px;
+   border: 1px solid black;
+   outline: none;
+   font-size: 25px;
+   vertical-align: middle;
+}
+
+.plus{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li.checked {
+    background: rgb(255, 252, 252);
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
